@@ -1,0 +1,308 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Calibri, serif;
+  background-color: #000000;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header styles */
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+/* Navigation styles */
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #216bc4;
+}
+
+/* Toggle button styles */
+#toggleDarkMode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#toggleDarkMode::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border-radius: 50%;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode #toggleDarkMode::before {
+  background-color: #333;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+header.dark-mode {
+  background-color: #60a4e8;
+  color: #fff;
+}
+
+nav.dark-mode ul li a {
+  color: #fff;
+}
+
+main.dark-mode {
+  background-color: #444;
+}
+
+section.dark-mode {
+  color: #fff;
+}
+
+.project.dark-mode {
+  background-color: #666;
+}
+
+.project.dark-mode h3 {
+  color: #fff;
+}
+
+.project.dark-mode p {
+  color: #ccc;
+}
+
+.contact-info.dark-mode p {
+  color: #fff;
+}
+
+.contact-form.dark-mode input,
+.contact-form.dark-mode textarea {
+  background-color: #555;
+  color: #fff;
+  border-color: #555;
+}
+
+.contact-form.dark-mode button {
+  background-color: #60a4e8;
+  color: #fff;
+}
+
+footer.dark-mode {
+  background-color: #60a4e8;
+  color: #000000;
+}
+
+/* Main content styles */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #b8b3b3;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #003366;
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Project styles */
+.project {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  color: #003366;
+  font-size: 24px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.project p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Contact styles */
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.contact-form button:hover {
+  background-color: #00234d;
+}
+
+/* Footer styles */
+footer {
+  background-color: #003366;
+  color:
+  #fff;
+  text-align: center;
+  padding: 20px;
+  }
+  
+  footer p {
+  font-size: 14px;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+  header h1 {
+  font-size: 36px;
+  }
+  
+  header p {
+  font-size: 16px;
+  }
+  
+  nav ul li a {
+  font-size: 16px;
+  padding: 3px 8px;
+  }
+  
+  main {
+  padding: 10px;
+  }
+  
+  h2 {
+  font-size: 28px;
+  }
+  
+  p {
+  font-size: 16px;
+  }
+  
+  .project h3 {
+  font-size: 22px;
+  }
+  
+  .project p {
+  font-size: 16px;
+  }
+  
+  .contact-info p {
+  font-size: 16px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+  padding: 8px;
+  font-size: 16px;
+  }
+  
+  .contact-form textarea {
+  height: 80px;
+  }
+  
+  .contact-form button {
+  padding: 8px 16px;
+  }
+  
+  footer p {
+  font-size: 12px;
+  }
+  }
+  
+  

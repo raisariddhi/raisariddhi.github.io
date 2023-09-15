@@ -1,17 +1,121 @@
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="styles.css">
-	</head>
-	<body>
-		<img src="assets/banner.jpg" height="200" width="600"/>
-		<h1>Badger Bakery</h1>
-		<a href="index.html">Home</a>
-		<a href="about-us.html">About Us</a>
-		<a href="order.html">Order</a>
-		<a href="contact.html">Contact</a>
-		<h2>Welcome!</h2>
-		<p>Welcome to our small-town bakery located in <a href="https://www.cityofmadison.com/">Madison, WI!</a></p>
-		<p>The bakery is open M-F 8a-5p.</p>
-	</body>
+<head>
+  <title>Raisa Riddhi</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      // Add smooth scrolling to anchor links
+      const anchorLinks = document.querySelectorAll('a[href^="#"]');
+      anchorLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Raisa Riddhi</h1>
+    <p>Software Developer</p>
+    <img src="file:///full/path/to/your/picture.jpg" alt="raisariddhi">
+    <button id="toggleDarkMode"></button>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const toggleDarkModeBtn = document.getElementById('toggleDarkMode');
+            toggleDarkModeBtn.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#aboutme">About Me</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#projects">Select Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="aboutme">
+      <h2>About Me</h2>
+      <p>Honors student majoring in Computer Science B.S. with a variety of professional experiences.
+        Skilled in leadership, with a strong foundation in math, logic, and coding in C, Java, Python,
+        JavaScript, HTML and CSS. Looking for internships in the Computer Science and IT field.</p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <style>
+        .button {
+          display: inline-block;
+          padding: 10px 20px;
+          border-radius: 50px;
+          background-color: #b9c9ef;
+          color: #333;
+          text-decoration: none;
+          font-weight: bold;
+          border: 2px solid #040e4c;
+        }
+      </style>
+      
+    <p>
+        <a href="file:///Users/raisasolaimanriddhi/Desktop/raisariddhi.github.io/Raisa_Riddhi-2023_Resume.pdf" class="button" target="_blank">Resume</a>
+    </p>      
+                </section>
+
+    <section id="projects">
+      <h2> Select Projects</h2>
+      <div class="project">
+        <h3>Song Search App</h3>
+        <p>Users can find the titles, artists, and publication years for songs by searching for individual words in song titles. A Hash Table is used to associate individual words from the titles of songs (keys) with lists of songs that contain that word in their title (values).</p>
+      </div>
+
+      <div class="project">
+        <h3>Class Route Planner</h3>
+        <p>This app can be used to find the shortest path along different buildings on a school campus. It can be used by students who are trying to plan routes from a starting place to their class.</p>
+      </div>
+
+      <div class="project">
+        <h3>Enigma Machine</h3>
+        <p>Enigma machine uses rotors to encrypt and decrypt messages. Users can choose which rotors to use and in what order they will be applied.</p>
+      </div>
+
+      <div class="project">
+        <h3>Project 4</h3>
+        <p>Description of Project 4.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <p></p>
+        <p>GitHub: <a href="https://github.com/raisariddhi" target="_blank">raisariddhi</a></p></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/raisa-riddhi/" target="_blank">/raisa-riddhi/</a></p>
+        <p>Email: <a href="mailto:rriddhi@wisc.edu">rriddhi@wisc.edu</a></p>
+        <p>Phone: 608-960-2737</p>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Raisa Riddhi</p>
+  </footer>
+</body>
 </html>
