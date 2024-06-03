@@ -1,133 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Raisa Riddhi</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .cropped-image {
-            width: 300px;
-            height: auto;
-            object-fit: cover;
-            object-position: top center;
-        }
-    </style>
-  <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      // Add smooth scrolling to anchor links
-      const anchorLinks = document.querySelectorAll('a[href^="#"]');
-      anchorLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          const target = document.querySelector(link.getAttribute('href'));
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-    });
-  </script>
+    <title>Raisa's Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Raisa Riddhi</h1>
-    <h3>Software Developer</h3>
-    <br/>
-    <img src="raisa.png" alt="raisariddhi"  class="cropped-image">
-    <button id="toggleDarkMode"></button>
-    <script>
-        window.addEventListener('DOMContentLoaded', function() {
-            const toggleDarkModeBtn = document.getElementById('toggleDarkMode');
-            toggleDarkModeBtn.addEventListener('click', function() {
-                document.body.classList.toggle('dark-mode');
-            });
-        });
-    </script>
-  </header>
+    <!-- Topbar Navigation -->
+    <nav class="topbar">
+        <div class="container">
+            <a href="#about">About Me</a>
+            <a href="#projects">My Work</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </nav>
 
-  <nav>
-    <ul>
-      <li><a href="#aboutme">About Me</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#projects">Select Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Raisa's Gallery</h1>
+            <p>Welcome to My Portfolio</p>
+        </div>
+    </header>
 
-  <main>
-    <section id="aboutme">
-      <h2>About Me</h2>
-      <p>I'm an Honors student pursuing a Bachelor of Science in Computer Science at the University of Wisconsin-Madison, where I've cultivated a strong foundation in mathematics, logic, and coding. Through diverse professional experiences, I've showcased proficiency in C, Java, Python, JavaScript, HTML, and CSS. Beyond coding, my skills extend to design and user experience, demonstrated through my proficiency in tools like Figma, Adobe Creative Suite (Illustrator, Photoshop, XD), and Canva. In leadership roles, such as General Secretary of the Bangladeshi Student Organization and Resident Assistant for 3 years, I've proven my ability to collaborate effectively and drive initiatives.</p>
-    </section>
-
-    <section id="resume">
-      <h2>Resume</h2>
-      <style>
-        .button {
-          display: inline-block;
-          padding: 10px 20px;
-          border-radius: 50px;
-          background-color: #b9c9ef;
-          color: #333;
-          text-decoration: none;
-          font-weight: bold;
-          border: 2px solid #040e4c;
-        }
-      </style>
-      
-    <p>
-        <a href="https://github.com/raisariddhi/raisariddhi.github.io/blob/main/RAISA_RIDDHI_RESUME.pdf" class="button" target="_blank">View here</a>
-    </p>      
-                </section>
-
-    <section id="projects">
-      <h2> Select Projects</h2>
-      <p><b>Click on the project titles to view them.</b></p>
-      <br/>
-      <div class="project">
-        <h3><a href="https://github.com/raisariddhi/ourhour">OurHour</a></h3>
-        <p>Ourhour is the first Office Hours queue managenent app. It's simplistic design aims to solve one pressing issue: maintaining a queue of students who seek help for office hours and to make it easier for TAs to help and mark off students.</p>     
-    </div>
-
-      <div class="project">
-        <h3><a href="https://github.com/raisariddhi/easy-meals">EasyMeals</a></h3>
-        <p>EasyMeals is a mobile app designed to simplify meal planning and cooking for college students living in on-campus apartments. This app includes features like a customizable meal calendar, grocery list management, and an ingredient-based recipe search to help students save time and enjoy home-cooked meals. Developed with user insights and feedback.</p>      
-    </div>
-
-
-      <div class="project">
-        <h3><a href="https://github.com/raisariddhi/gig-table">GigTable</a></h3>
-        <p>This repository houses the development journey of GigTable, a conceptual platform designed to simplify gig organization, communication, and task management for local musicians and bands. Explore our ideation, model analysis, prototyping, final design, and evaluation phases as we endeavor to improve the gig management experience.</p>      
-    </div>
-
-      <div class="project">
-        <h3><a href="https://github.com/raisariddhi/enigma-machine">Enigma Machine</a></h3>
-        <p>The Enigma machine, known for its complexity and role in cryptography history, is simulated here for educational and illustrative purposes. The repository includes C code that demonstrates the basic principles of the Enigma machine, allowing users to experiment with different rotor configurations, rotations, and encryption/decryption processes.</p>  
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-description">
+                <p>Hi! I'm Raisa. I graduated with a Bachelor of Science degree in Computer Science with Honors at the University of Wisconsin-Madison, where I've cultivated a strong foundation in mathematics, logic, and coding. Through diverse professional experiences, I've showcased proficiency in C, Java, Python, JavaScript, HTML, and CSS. Beyond coding, my skills extend to design and user experience, demonstrated through my proficiency in tools like Figma, Adobe Creative Suite (Illustrator, Photoshop, XD), and Canva. In leadership roles, such as General Secretary of the Bangladeshi Student Organization and Resident Assistant for 3 years, I've proven my ability to collaborate effectively and drive initiatives.</p>
+                <button onclick="viewResume()">Click to View My Resume</button>
+            </div>
+            <div class="about-image">
+                <img src="dp.jpg" alt="Headshot Placeholder">
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-info">
-        <p></p>
-        <p>GitHub: <a href="https://github.com/raisariddhi" target="_blank">raisariddhi</a></p></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/raisa-riddhi/" target="_blank">/raisa-riddhi/</a></p>
-        <p>Email: <a href="mailto:raisasriddhi@gmail.com">raisasriddhi@gmail.com</a></p>
-        <p>Phone: 608-960-2737</p>
-      </div>
+<!-- Projects Section -->
+<section class="projects" id="projects">
+    <h2>My Work</h2>
+    <p>Click on the project title to view them!</p>
+    <div class="project-container">
+        <div class="project">
+            <div class="project-image">
+                <img src="project1-thumbnail.jpg" alt="Project 1 Thumbnail">
+            </div>
+            <div class="project-description">
+                <h3><a href="https://github.com/raisariddhi/gig-table">GigTable</a></h3>
+                <p>GigTable is a conceptual platform designed to simplify gig organization, communication, and task management for local musicians and bands. Explore the ideation, model analysis, prototyping, final design, and evaluation phases as we endeavor to improve the gig management experience.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-image">
+                <img src="project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+            </div>
+            <div class="project-description">
+                <h3><a href="https://github.com/raisariddhi/ourhour">OurHour</a></h3>
+                <p>OurHour is the first office hours queue managenent website for the CS department at UW-Madison. It's simplistic design aims to solve one pressing issue: maintaining a queue of students who seek help for office hours and to make it easier for TAs to help and mark off students.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-image">
+                <img src="project4-thumbnail.jpg" alt="Project 4 Thumbnail">
+            </div>
+            <div class="project-description">
+                <h3><a href="https://github.com/raisariddhi/enigma-machine">Enigma Machine</a></h3>
+                <p>The Enigma machine, known for its complexity and role in cryptography history, is simulated here for educational and illustrative purposes. It made with C and demonstrates the basic principles of the Enigma machine, allowing users to experiment with different rotor configurations, rotations, and encryption/decryption processes.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-image">
+                <img src="project3-thumbnail.jpg" alt="Project 3 Thumbnail">
+            </div>
+            <div class="project-description">
+                <h3><a href="https://github.com/raisariddhi/easy-meals">EasyMeals</a></h3>
+                <p>EasyMeals is a mobile app designed to simplify meal planning and cooking for college students living in on-campus apartments. This app design includes features like a customizable meal calendar, grocery list management, and an ingredient-based recipe search to help students save time and enjoy home-cooked meals. Developed with user insights and feedback.</p>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</section>
 
-      <form class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p></p>
+            <p>GitHub: <a href="https://github.com/raisariddhi" target="_blank">raisariddhi</a></p></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/raisa-riddhi/" target="_blank">/raisa-riddhi/</a></p>
+            <p>Email: <a href="mailto:raisasriddhi@gmail.com">raisasriddhi@gmail.com</a></p>
+            <p>Phone: 608-960-2737</p>
+        </div>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2024 Raisa Riddhi</p>
-  </footer>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Raisa's Gallery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function viewResume() {
+            window.open('RIDDHI_Resume.pdf', '_blank');
+        }
+    </script>
 </body>
 </html>
