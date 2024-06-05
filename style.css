@@ -165,11 +165,14 @@ section {
 }
 
 /* Contact form styles */
+.contact-info p:last-child {
+  margin-bottom: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
 }
 
 form label {
